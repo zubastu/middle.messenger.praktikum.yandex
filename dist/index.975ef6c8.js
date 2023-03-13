@@ -568,8 +568,11 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "App", ()=>App);
 var _linkPage = require("./pages/LinkPage");
 var _wrongPageCustom = require("./pages/WrongPageCustom");
+var _chatsPage = require("./pages/ChatsPage");
 const App = ()=>{
     switch(window.location.pathname){
+        case "/chats":
+            return (0, _chatsPage.ChatsPage)();
         case "/500":
             return (0, _wrongPageCustom.WrongPageCustom)("500", "Мы уже фиксим", {
                 href: "/",
@@ -585,7 +588,7 @@ const App = ()=>{
     }
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./pages/LinkPage":"iPu1e","./pages/WrongPageCustom":"7Z0VX"}],"gkKU3":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./pages/LinkPage":"iPu1e","./pages/WrongPageCustom":"7Z0VX","./pages/ChatsPage":"h5aBU"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -11970,16 +11973,16 @@ const linksData = [
         link: "Профиль"
     },
     {
-        href: "/chat",
+        href: "/chats",
         link: "Чат"
     },
     {
-        href: "/WrongPageCustom",
-        link: "Страница WrongPageCustom"
+        href: "/404",
+        link: "Страница 400"
     },
     {
-        href: "/page-5xx",
-        link: "Страница 5xx"
+        href: "/500",
+        link: "Страница 500"
     }
 ];
 
@@ -12056,6 +12059,23 @@ const SubTitle = (text)=>{
 
 },{"handlebars":"i0QfX","./styles.module.css":"hpqtD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hpqtD":[function(require,module,exports) {
 module.exports["subTitle"] = `iAWs2W_subTitle`;
+
+},{}],"h5aBU":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ChatsPage", ()=>ChatsPage);
+var _handlebars = require("handlebars");
+var _handlebarsDefault = parcelHelpers.interopDefault(_handlebars);
+var _stylesModuleCss = require("./styles.module.css");
+const ChatsPage = ()=>{
+    return (0, _handlebarsDefault.default).compile(`
+        <section>
+            <p>Chats</p>
+        </section>
+    `)();
+};
+
+},{"handlebars":"i0QfX","./styles.module.css":"g0f84","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g0f84":[function(require,module,exports) {
 
 },{}],"bhJkM":[function() {},{}]},["jC2qd","8lqZg"], "8lqZg", "parcelRequireab20")
 
