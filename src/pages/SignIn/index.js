@@ -1,6 +1,5 @@
 import Handlebars from "handlebars";
 import * as classes from "./styles.module.css";
-
 import { Form } from "../../partials/Form/Form";
 import { Input } from "../../partials/Input/Input";
 import { Submit } from "../../partials/Submit/Submit";
