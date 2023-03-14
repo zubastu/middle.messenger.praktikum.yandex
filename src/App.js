@@ -7,6 +7,10 @@ import { Profile } from "./pages/Profile";
 
 export const App = () => {
   switch (window.location.pathname) {
+    case "/profile/change-info":
+      return Profile();
+    case "/profile/change-password":
+      return Profile();
     case "/profile":
       return Profile();
     case "/sign-up":

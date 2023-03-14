@@ -24,11 +24,11 @@ export const Profile = () => {
                 
                <div class=${classes.navigationContainer}>
                  <div class=${classes.borderContainer}>
-                    ${MenuLink("/profile", "Изменить данные")()}
+                    ${MenuLink("/profile/change-info", "Изменить данные")()}
                 </div>
                 
                 <div class=${classes.borderContainer}>
-                    ${MenuLink("/profile", "Изменить пароль")()}
+                    ${MenuLink("/profile/change-password", "Изменить пароль")()}
                 </div>
                 
                 <div class=${classes.borderContainer}>
