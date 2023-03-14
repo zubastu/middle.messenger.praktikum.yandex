@@ -1,0 +1,32 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #EAEAEA;
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+}
+.container:last-of-type {
+    border: none;
+    margin: 0;
+}
+.input {
+    margin: 0;
+    border: none;
+    background: inherit;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 0;
+    text-align: end;
+}
+.label {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    color: #1E1E1E;
+}
