@@ -6,6 +6,8 @@ import { MenuLink } from "../../partials/Menu-link/MenuLink";
 import { Submit } from "../../partials/Submit/Submit";
 import { ProfileSideNavigation } from "../../partials/ProfileSideNavigation/ProfileSideNavigation";
 
+//TODO: Добавить включение/выключение формы и скрытие навигационных кнопок после нажатия на изменить данные
+
 export const Profile = () => {
   return Handlebars.compile(`
         <section class=${classes.container}>
