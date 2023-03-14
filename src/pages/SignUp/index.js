@@ -7,11 +7,11 @@ import { Submit } from "../../partials/Submit/Submit";
 const children = [
   Input("text", "Почта", "email"),
   Input("text", "Логин", "login"),
-  Input("text", "Имя", "firstName"),
-  Input("text", "Фамилия", "secondName"),
+  Input("text", "Имя", "first_name"),
+  Input("text", "Фамилия", "second_name"),
   Input("number", "Телефон", "phone"),
-  Input("password", "Пароль", "phone"),
-  Input("password", "Пароль(еще раз)", "phone"),
+  Input("password", "Пароль", "password"),
+  Input("password", "Пароль(еще раз)", "password"),
   Submit("Авторизоваться"),
 ];
 

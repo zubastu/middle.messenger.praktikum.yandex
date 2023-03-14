@@ -5,9 +5,9 @@ import { ProfileInput } from "../ProfileInput/ProfileInput";
 const children = [
   ProfileInput("email", "text", "pochta@yandex.ru", "Почта"),
   ProfileInput("login", "text", "ivanivanov", "Логин"),
-  ProfileInput("firstName", "text", "Иван", "Имя"),
-  ProfileInput("secondName", "text", "Иванов", "Фамилия"),
-  ProfileInput("chatName", "text", "Иван", "Имя в чате"),
+  ProfileInput("first_name", "text", "Иван", "Имя"),
+  ProfileInput("second_name", "text", "Иванов", "Фамилия"),
+  ProfileInput("display_name", "text", "Иван", "Имя в чате"),
   ProfileInput("phone", "text", "+7(909)9673030", "Телефон"),
 ];
 
