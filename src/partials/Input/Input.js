@@ -3,9 +3,10 @@ import * as classes from "./styles.module.css";
 
 export const Input = (type, text, name) => {
   return Handlebars.compile(`
-        <label class=${classes.label}>
-            ${text}
-            <input class=${classes.input} type=${type} placeholder=${text} name=${name}>
-        </label>
+        <div class=${classes.inputContainer}>
+            <label class=${classes.label} for=${name}>${text}</label>
+            <input class=${classes.input} type=${type} name=${name}>
+            <span class=${classes.error}>Ошибка</span>
+        </div>
     `);
 };

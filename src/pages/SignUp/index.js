@@ -9,7 +9,6 @@ const children = [
   Input("text", "Логин", "login"),
   Input("text", "Имя", "firstName"),
   Input("text", "Фамилия", "secondName"),
-  Input("text", "Логин", "login"),
   Input("number", "Телефон", "phone"),
   Input("password", "Пароль", "phone"),
   Input("password", "Пароль(еще раз)", "phone"),
