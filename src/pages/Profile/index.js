@@ -1,10 +1,10 @@
 import Handlebars from "handlebars";
 import * as classes from "./styles.module.css";
 import profileImage from "../../../static/images/profile.svg";
-import arrowImage from "../../../static/images/arrow.svg";
 import { ProfileForm } from "../../partials/ProfileForm/ProfileForm";
 import { MenuLink } from "../../partials/Menu-link/MenuLink";
 import { Submit } from "../../partials/Submit/Submit";
+import { ProfileSideNavigation } from "../../partials/ProfileSideNavigation/ProfileSideNavigation";
 
 export const Profile = () => {
   return Handlebars.compile(`
@@ -13,11 +13,7 @@ export const Profile = () => {
               <img class=${classes.image} src=${profileImage} alt="Профиль">
             </div>
             
-            <div class=${classes.backLinkContainer}>
-                <button class=${
-                  classes.button
-                }><img src=${arrowImage} alt="Назад"></button>
-            </div>
+            ${ProfileSideNavigation()}
             
             <div class=${classes.formContainer}>
                 ${ProfileForm()}

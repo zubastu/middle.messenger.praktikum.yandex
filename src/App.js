@@ -4,13 +4,12 @@ import { ChatsPage } from "./pages/ChatsPage";
 import { SignIn } from "./pages/SignIn";
 import { SignUp } from "./pages/SignUp";
 import { Profile } from "./pages/Profile";
+import { ChangePassword } from "./pages/ChangePassword/ChangePassword";
 
 export const App = () => {
   switch (window.location.pathname) {
-    case "/profile/change-info":
-      return Profile();
     case "/profile/change-password":
-      return Profile();
+      return ChangePassword();
     case "/profile":
       return Profile();
     case "/sign-up":

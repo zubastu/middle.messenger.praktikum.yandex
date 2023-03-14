@@ -24,8 +24,9 @@
     height: 40px;
 }
 
+
 .formContainer {
-    margin: 0;
+    margin: 97px 0 0 0;
 }
 .borderContainer {
     width: 100%;
@@ -39,22 +40,4 @@
 .borderContainer:last-of-type {
     border: none;
     margin: 0;
-}
-
-.exitButton {
-    border: none;
-    background: inherit;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    color: #FF0000;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 13px;
-}
-
-.navigationContainer {
-    margin: 60px 0 0 0;
 }
