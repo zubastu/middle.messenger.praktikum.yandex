@@ -3,9 +3,12 @@ import { WrongPageCustom } from "./pages/WrongPageCustom";
 import { ChatsPage } from "./pages/ChatsPage";
 import { SignIn } from "./pages/SignIn";
 import { SignUp } from "./pages/SignUp";
+import { Profile } from "./pages/Profile";
 
 export const App = () => {
   switch (window.location.pathname) {
+    case "/profile":
+      return Profile();
     case "/sign-up":
       return SignUp();
     case "/sign-in":
